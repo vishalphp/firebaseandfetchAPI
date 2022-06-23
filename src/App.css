@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+.setleft{
+  float: left;
+  width: 200px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.setleftanswerlies{
+  list-style: none;
+  margin: 10px 0;
+  display: inline-block;
+}
+.setleftanswer{
+  float: left;
+  width: 200px;
+}
+.headbox{
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+}
+#featchdata, .buttonfetach{
+  display: inline-block;
+  margin: auto;
+}
+.buttonfetach{
+  width: 100%;
+  margin-left: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+  list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addmoviedtawrap{
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.warplabinput{
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.wrapbetwn{
+  width: 50%;
+  margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.warplabinput label{
+  width: 150px;
+    display: inline-block;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
 }
