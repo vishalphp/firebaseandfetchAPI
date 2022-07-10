@@ -34,7 +34,6 @@ function App() {
           });
         */
           const movid2 = await readMovies();
-         //console.log(movid2);
 
         const datainobject = JSON.parse(movid2).map(objdata => {
             return {
@@ -72,7 +71,7 @@ function App() {
       </li>
 });
 
-const submiteform = (e) =>{
+const submiteform = async(e) =>{
   e.preventDefault();
    const titleinput = titleRef.current.value;
    const openingcrawlinput = openingcrawlRef.current.value;
@@ -81,7 +80,22 @@ const submiteform = (e) =>{
    const releasedateinput = releasedateRef.current.value;
 
    addMoviesList(titleinput, openingcrawlinput, directorinput, producerinput, releasedateinput);
-   
+   /*
+   const postdata = {
+    title: titleinput,
+    opening_crawl: openingcrawlinput,
+    director: directorinput,
+    producer: producerinput,
+    release_date: releasedateinput
+   } 
+   const moviedatafeatch = await fetch('https://xxx-1500689700394-default-rtdb.firebaseio.com/test.json',{
+    method: 'POST',
+    body: JSON.stringify(postdata)
+   });
+    const movid2 = await moviedatafeatch.json();
+console.log(movid2);
+*/
+
    titleRef.current.value ='';
    openingcrawlRef.current.value='';
    directorRef.current.value='';
